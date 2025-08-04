@@ -7,4 +7,5 @@ export interface Education {
   endDate?: Date;
   description?: string;
   location?: string;
+  link?: string; // Optional field for a link to the institution or program
 }
