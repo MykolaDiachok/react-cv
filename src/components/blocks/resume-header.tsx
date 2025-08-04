@@ -1,4 +1,4 @@
-import { useResume } from '../hooks/use-resume.ts';
+import { useResume } from '../../providers/use-resume.ts';
 import mykola from '../../assets/mykola-icon.png';
 import { parsePhoneNumberFromString } from 'libphonenumber-js';
 

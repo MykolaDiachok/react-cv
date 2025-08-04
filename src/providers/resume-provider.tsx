@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { Cv } from '../../models/cv.ts';
-import { cvEn } from '../../data/cv-en.ts';
+import type { Cv } from '../models/cv.ts';
+import { cvEn } from '../data/cv-en.ts';
 
 type ResumeContextValue = {
   resume: Cv;
