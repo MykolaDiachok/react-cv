@@ -15,6 +15,11 @@ export default tseslint.config([
   {
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
+      parser: tseslint.parser,
+      parserOptions: {
+        project: ['./tsconfig.app.json', './tsconfig.eslint.json'],
+        tsconfigRootDir: process.cwd(),
+      },
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
