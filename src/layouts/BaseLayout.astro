@@ -1,0 +1,94 @@
+---
+import '../index.css';
+
+export type Props = {
+  title?: string;
+  description?: string;
+};
+
+const {
+  title = 'Mykola Diachok - Senior Full Stack Developer | CV & Portfolio',
+  description =
+    'The portfolio and resume of Mykola Diachok, a Senior Full Stack Developer with expertise in React, Angular, .NET, and building scalable web applications.',
+} = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const ogImage = new URL('/react-cv/preview.png', Astro.site).toString();
+
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Mykola Diachok',
+  jobTitle: 'Senior Full Stack Developer',
+  url: new URL('/react-cv/', Astro.site).toString(),
+  image: ogImage,
+  description:
+    'Experienced Senior Full Stack Developer with a demonstrated history of working in the computer software industry. Skilled in .NET, C#, Angular, React, and cloud technologies.',
+  knowsAbout: [
+    'React',
+    'Angular',
+    '.NET',
+    'TypeScript',
+    'JavaScript',
+    'Azure',
+    'CI/CD',
+    'Agile Methodologies',
+  ],
+  worksFor: {
+    '@type': 'Organization',
+    name: 'Development of IT Systems',
+  },
+  sameAs: ['https://www.linkedin.com/in/mykola-d-5999b913', 'https://github.com/MykolaDiachok'],
+};
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="senior full stack developer, react developer, .net developer, typescript, javascript, resume, cv, portfolio, Mykola Diachok"
+    />
+    <meta name="author" content="Mykola Diachok" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <link rel="icon" type="image/svg+xml" href="/react-cv/favicon.svg" />
+
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPWPJXBF46"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EPWPJXBF46');
+    </script>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Mykola Diachok — CV" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalUrl} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImage} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(personJsonLd)}></script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+

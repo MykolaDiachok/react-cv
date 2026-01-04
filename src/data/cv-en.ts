@@ -1,4 +1,16 @@
 import type { Cv } from '../models/cv.ts';
+import { Intellias } from './experiences/2021-08-intellias.ts';
+import { DevPro } from './experiences/2021-03-dev-pro.ts';
+import { ForteGroup } from './experiences/2020-03-forte-group.ts';
+import { TennisPoint } from './experiences/2019-03-tennis-point.ts';
+import { KtUkraine } from './experiences/2017-02-kt-ukraine.ts';
+import { RadioLine } from './experiences/2011-10-radio-line.ts';
+import { Agromars } from './experiences/2011-03-agromars.ts';
+import { Digma } from './experiences/2008-07-digma.ts';
+import { veresenPlus } from './experiences/2004-10-veresen-plus.ts';
+import { naftaProduct } from './experiences/2002-02-nafta.ts';
+import { mangust } from './experiences/2000-10-mangust.ts';
+import { poligraphIzdat } from './experiences/1995-11-poligraph-izdat.ts';
 
 export const cvEn: Cv = {
   id: 'cv-en',
@@ -6,7 +18,7 @@ export const cvEn: Cv = {
   title: 'Software Engineer',
   email: 'm.diachok@icloud.com',
   phone: '+385916077610',
-  summary: `🔧 **Full Stack Engineer** with over **20 years of experience** building scalable enterprise-grade web and mobile applications. Expert in full SDLC — from architecture design to deployment and optimization.
+  description: `🔧 **Full Stack Engineer** with over **20 years of experience** building scalable enterprise-grade web and mobile applications. Expert in full SDLC — from architecture design to deployment and optimization.
 
 ### 💡 Technical Strengths
 
@@ -29,8 +41,40 @@ export const cvEn: Cv = {
 - Strong in **critical thinking**, **problem solving**, and **team leadership**
 - Passionate about clean architecture, **code refactoring**, and performance tuning
 - Fluent in **English**, **Ukrainian**, **Russian**, and **intermediate Croatian**`,
-  experiences: [],
-  skills: [],
+  experiences: [
+    Intellias,
+    DevPro,
+    ForteGroup,
+    TennisPoint,
+    KtUkraine,
+    RadioLine,
+    Agromars,
+    Digma,
+    veresenPlus,
+    naftaProduct,
+    mangust,
+    poligraphIzdat,
+  ],
+  skills: [
+    { id: 'net', name: '.Net', level: 'expert', yearsOfExperience: 20 },
+    { id: 'c#', name: 'C#', level: 'expert', yearsOfExperience: 20 },
+    { id: 'core', name: 'ASP.NET Core', level: 'expert', yearsOfExperience: 10 },
+    { id: 'api', name: 'Web API', level: 'expert', yearsOfExperience: 10 },
+    { id: 'angular', name: 'Angular', level: 'advanced', yearsOfExperience: 5 },
+    { id: 'react', name: 'React', level: 'advanced', yearsOfExperience: 1 },
+    { id: 'azure-devops', name: 'Azure DevOps', level: 'advanced', yearsOfExperience: 5 },
+    { id: 'ci/cd', name: 'CI/CD', level: 'advanced', yearsOfExperience: 5 },
+    {
+      id: 'cloud',
+      name: 'Cloud Platforms (Azure, AWS, GCP)',
+      level: 'advanced',
+      yearsOfExperience: 5,
+    },
+    { id: 'mongo', name: 'MongoDB', level: 'advanced', yearsOfExperience: 5 },
+    { id: 'sql', name: 'SQL Server', level: 'advanced', yearsOfExperience: 20 },
+    { id: 'elastic', name: 'Elasticsearch', level: 'intermediate', yearsOfExperience: 5 },
+    { id: 'microservices', name: 'Microservices', level: 'intermediate', yearsOfExperience: 10 },
+  ],
   languages: [
     { name: 'English', proficiency: 'advanced' },
     { name: 'Ukrainian', proficiency: 'native' },
@@ -72,4 +116,5 @@ export const cvEn: Cv = {
       link: 'https://int.krok.edu.ua/en/',
     },
   ],
+  summary: '',
 };

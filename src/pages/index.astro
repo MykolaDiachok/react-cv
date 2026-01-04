@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import App from '../app';
+
+const title = 'Mykola Diachok - Senior Full Stack Developer';
+const description =
+  'Senior Full Stack Developer with experience in .NET, React, Angular, Azure, CI/CD, and enterprise systems. CV, experience, projects, and skills.';
+---
+
+<BaseLayout title={title} description={description}>
+  <!-- Static SEO content for crawlers (Bing/AI). -->
+  <header class="sr-only">
+    <h1>{title}</h1>
+    <p>{description}</p>
+  </header>
+
+  <!-- Interactive resume UI -->
+  <App client:load />
+</BaseLayout>
