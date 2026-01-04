@@ -16,4 +16,5 @@ export interface Cv {
   skills: Skill[]; // List of skills
   languages?: Language[]; // Optional field for languages spoken
   educations?: Education[];
+  description?: string;
 }

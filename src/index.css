@@ -1,69 +1,102 @@
-@import "tailwindcss";
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* =========================
+   Global Base Styles
+========================= */
+@layer base {
+  * {
+    box-sizing: border-box;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    @apply bg-slate-950 text-slate-100;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+  h1 {
+    font-size: 2rem;
+    @apply text-slate-50;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    @apply text-slate-200 border-b-2 border-slate-800;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    @apply text-slate-200;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  a {
+    @apply text-teal-300;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
   a:hover {
-    color: #747bff;
+    @apply text-teal-200;
+    text-decoration: underline;
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+/* =========================
+   Custom Utilities
+========================= */
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .all-unset {
+    all: unset;
+  }
+}
+
+/* =========================
+   Link-like button component
+========================= */
+@layer components {
+  .btn-link {
+    all: unset;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s;
+    @apply text-teal-300;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .btn-link:hover {
+    @apply text-teal-200;
+  }
+
+  .btn-link:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
   }
 }

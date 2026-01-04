@@ -4,9 +4,15 @@ export interface Experience {
   id: string; // Unique identifier for the experience
   jobTitle: string;
   companyName: string;
-  location?: string; // Optional field for the location of the job
+  companyNameLocal?: string;
+  companyDescription?: string;
+  location?: string;
+  link?: string;
   startDate: Date;
   endDate?: Date;
-  description: string;
+  shotDescription: string;
+  fullDescription?: string;
+  keyFeatures?: string[];
   projects?: Project[];
+  skills?: string[];
 }

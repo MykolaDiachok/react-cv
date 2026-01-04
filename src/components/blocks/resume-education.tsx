@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
 import { useResume } from '../../providers/use-resume.ts';
+import { Fragment } from 'react';
 
 export const ResumeEducation = () => {
   const { resume } = useResume();
@@ -8,43 +8,37 @@ export const ResumeEducation = () => {
   if (!educations?.length) return;
 
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="mt-6 bg-white dark:bg-gray-900 p-6 rounded-xl shadow border border-gray-200 dark:border-gray-700"
-    >
-      <h2 className="text-xl font-bold mb-4 text-teal-600 dark:text-teal-400">Education</h2>
-
-      <ul className="space-y-4 text-left">
-        {educations.map((edu, index) => (
-          <li key={index}>
-            <h3 className="text-lg font-semibold">{edu.degree}</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300">
-              {edu.institutionName} — {edu.location}
-            </p>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              {edu.startDate.toLocaleDateString()} –{' '}
-              {edu.endDate?.toLocaleDateString() ?? 'Present'}
-            </p>
-            {edu.description && (
-              <p className="mt-1 text-sm text-gray-700 dark:text-gray-200">{edu.description}</p>
-            )}
-            {edu.link && (
-              <p className="mt-1 text-sm">
-                <a
-                  href={edu.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-teal-600 dark:text-teal-400 hover:underline"
-                >
-                  Visit website
-                </a>
+    <Fragment>
+      <section className="bg-slate-900/50 rounded-lg p-6 mb-6">
+        <h2 className="border-b-2 border-slate-700 pb-2 mb-4">Education</h2>
+        <ul className="space-y-5">
+          {educations.map((edu, index) => (
+            <li className="" key={index}>
+              <h3 className="not-first:mt-5">{edu.degree}</h3>
+              <p>
+                {edu.institutionName} — {edu.location}
               </p>
-            )}
-          </li>
-        ))}
-      </ul>
-    </motion.section>
+              <p>
+                {edu.startDate.toLocaleDateString()} –{' '}
+                {edu.endDate?.toLocaleDateString() ?? 'Present'}
+              </p>
+              {edu.description && <p>{edu.description}</p>}
+              {edu.link && (
+                <p className="mt-1 text-sm">
+                  <a
+                    href={edu.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-600 dark:text-teal-400 hover:underline"
+                  >
+                    Visit website
+                  </a>
+                </p>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+    </Fragment>
   );
 };
