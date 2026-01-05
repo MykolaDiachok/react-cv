@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { ProjectPage } from '../components/pages/project-page.tsx';
+
+const title = 'Projects — Mykola Diachok';
+const description =
+  'Detailed showcase of recent engineering initiatives, internal platforms, and enterprise integrations.';
+---
+
+<BaseLayout title={title} description={description}>
+  <header class="sr-only">
+    <h1>{title}</h1>
+    <p>{description}</p>
+  </header>
+
+  <ProjectPage client:load />
+</BaseLayout>
+
