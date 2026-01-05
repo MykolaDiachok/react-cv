@@ -23,8 +23,32 @@ export const Intellias: Experience = {
     '**Collaborated closely with distributed Agile teams** across Europe, North America, and Asia,\n  ensuring timely delivery and high product quality.',
     '**Contributed to solution architecture** and guided technical decisions across projects.',
   ],
-  skills: ['.Net', 'c#', 'core', 'api', 'angular', 'azure-devops', 'ci/cd'],
+  skills: ['.net', 'c#', 'core', 'api', 'angular', 'azure-devops', 'ci/cd'],
   projects: [
+    {
+      id: 'ai-dev-integration',
+      name: 'AI-Assisted Development Integration',
+      description:
+        'Integrated AI into the development workflow by designing and iterating prompts, automating repetitive engineering tasks, improving documentation, and accelerating code review and troubleshooting while maintaining code quality and security standards.',
+      role: 'Full Stack Developer',
+      skills: ['ai', 'prompt-engineering', 'automation', 'documentation'],
+    },
+    {
+      id: 'ai-contract-data-extraction',
+      name: 'AI Contract Data Extraction & Auto-Fill',
+      description:
+        'Implemented AI-assisted document understanding to recognize and extract key fields from contracts (e.g., parties, dates, amounts, clauses) and auto-fill structured forms, including validation and human-in-the-loop review workflows to improve accuracy and speed of contract processing.',
+      role: 'Full Stack Developer',
+      skills: ['ai', 'document-processing', 'data-extraction', 'automation'],
+    },
+    {
+      id: 'devexpress-grid-optimization',
+      name: 'DevExpress Data Grid Optimization',
+      description:
+        'Developed UI features with DevExpress(DevExtreme) components and improved performance end-to-end (UI + API) for large grids/tables and datasets. Optimized API queries and data sources to enable fast, reliable server-side sorting, pagination, and filtering, reduced payload size, and improved rendering and interaction responsiveness for end users.',
+      role: 'Full Stack Developer',
+      skills: ['devexpress', 'performance-optimization', 'data-sources', 'ui'],
+    },
     {
       id: 'support-old-apps',
       name: 'Support for Legacy Win32 Applications',
@@ -45,7 +69,7 @@ export const Intellias: Experience = {
       description:
         'Migrated a legacy Win32 quick registration system to a modern web application using .NET Core and Angular, enhancing user experience and system performance.',
       role: 'Full Stack Developer',
-      skills: ['.Net', 'core', 'api', 'angular'],
+      skills: ['.net', 'core', 'api', 'angular'],
     },
     {
       id: 'bid-admin',

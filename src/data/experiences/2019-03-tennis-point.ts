@@ -62,7 +62,7 @@ Key contributions included defining integration contracts with stakeholders (dat
       name: 'Warehouse Automation (Robots & Conveyor Control)',
       description: `Enhanced and extended an automated warehouse system used to coordinate picking/packing flows. I improved core modules responsible for warehouse operations, stability, and throughput, and helped implement monitoring and control for warehouse robots and conveyor lines to ensure reliable execution of workflows and fast incident response.`,
       role: '.Net Team Lead',
-      skills: ['.Net', 'c#', 'core', 'sql'],
+      skills: ['.net', 'c#', 'core', 'sql'],
     },
     {
       id: 'kyiv-team-build',
@@ -76,7 +76,7 @@ Key contributions included defining integration contracts with stakeholders (dat
       name: 'Accounting Subsystems Data Exchange & Website Integrations',
       description: `Implemented and supported data exchange between accounting subsystems and multiple e-commerce websites. I designed and maintained integration flows (data mapping, validation, and reconciliation) and coordinated changes with the teams responsible for each site to ensure consistent contracts, reliable releases, and minimal downtime during updates.`,
       role: '.Net Team Lead',
-      skills: ['integration', 'api', 'sql', '.Net'],
+      skills: ['integration', 'api', 'sql', '.net'],
     },
     {
       id: 'ecommerce-crawler',
@@ -86,5 +86,5 @@ Key contributions included defining integration contracts with stakeholders (dat
       skills: ['net', 'c#', 'core', 'sql', 'integration'],
     },
   ],
-  skills: ['.Net', 'c#', 'core', 'api', 'azure-devops', 'ci/cd', 'sql', 'SAP'],
+  skills: ['.net', 'c#', 'core', 'api', 'azure-devops', 'ci/cd', 'sql', 'SAP'],
 };
