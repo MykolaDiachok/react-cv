@@ -78,7 +78,7 @@ This initiative provided a major operational boost: it reduced manual work, impr
     },
   ],
   skills: [
-    '.Net',
+    '.net',
     'c#',
     'core',
     'api',

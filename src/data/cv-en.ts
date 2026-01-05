@@ -56,7 +56,7 @@ export const cvEn: Cv = {
     poligraphIzdat,
   ],
   skills: [
-    { id: 'net', name: '.Net', level: 'expert', yearsOfExperience: 20 },
+    { id: 'net', name: '.net', level: 'expert', yearsOfExperience: 20 },
     { id: 'c#', name: 'C#', level: 'expert', yearsOfExperience: 20 },
     { id: 'core', name: 'ASP.NET Core', level: 'expert', yearsOfExperience: 10 },
     { id: 'api', name: 'Web API', level: 'expert', yearsOfExperience: 10 },
