@@ -3,7 +3,9 @@ import { Fragment } from 'react';
 
 export const SiteHeader = () => {
   const { i18n } = useTranslation();
-  const basePath = (import.meta.env.BASE_URL ?? '/').replace(/\/$/, '/');
+
+  const rawBase = import.meta.env.BASE_URL ?? '/';
+  const basePath = `${rawBase.replace(/\/$/, '')}/`;
   const withBase = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
 
   const changeLanguage = async (lng: string) => {
