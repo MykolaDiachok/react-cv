@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { ContractPage } from '../components/pages/contract-page.tsx';
+
+const title = 'Contracts — Mykola Diachok';
+const description =
+  'Workspace dedicated to contract automation, compliance tools, and AI-assisted document workflows.';
+---
+
+<BaseLayout title={title} description={description}>
+  <header class="sr-only">
+    <p>{description}</p>
+  </header>
+
+  <ContractPage client:load />
+</BaseLayout>
+

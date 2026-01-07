@@ -4,6 +4,10 @@ import { Fragment } from 'react';
 export const SiteHeader = () => {
   const { i18n } = useTranslation();
 
+  const rawBase = import.meta.env.BASE_URL ?? '/';
+  const basePath = `${rawBase.replace(/\/$/, '')}/`;
+  const withBase = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
+
   const changeLanguage = async (lng: string) => {
     await i18n.changeLanguage(lng);
   };
@@ -14,14 +18,14 @@ export const SiteHeader = () => {
         <nav className="flex flex-wrap items-center justify-between w-full">
           <div className="">Mykola Diachok</div>
           <div className="flex flex-col rounded-lg p-4 text-lg lg:flex-row lg:space-x-8 lg:border-none lg:bg-transparent">
-            <a href="#resume" className="hover:text-teal-300 text-sm sm:text-base">
+            <a href={withBase('/')} className="hover:text-teal-300 text-sm sm:text-base">
               Resume
             </a>
-            <a href="#projects" className="hover:text-teal-300 text-sm sm:text-base">
+            <a href={withBase('/projects')} className="hover:text-teal-300 text-sm sm:text-base">
               Projects
             </a>
-            <a href="#contact" className="hover:text-teal-300 text-sm sm:text-base">
-              Contact
+            <a href={withBase('/contracts')} className="hover:text-teal-300 text-sm sm:text-base">
+              Contracts
             </a>
 
             <div className="flex gap-2 text-sm">

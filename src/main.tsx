@@ -4,8 +4,12 @@ import './index.css';
 import './i18n/index';
 import App from './app.tsx';
 
-createRoot(document.querySelector('#root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-);
+const appRoot = document.querySelector('#root');
+
+if (appRoot) {
+  createRoot(appRoot).render(
+    <StrictMode>
+      <App />
+    </StrictMode>,
+  );
+}
