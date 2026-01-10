@@ -27,7 +27,7 @@ export const Intellias: Experience = {
   projects: [
     {
       id: 'ai-dev-integration',
-      name: 'AI-Assisted Development Integration',
+      name: 'AI-Assisted Development Integration - Faster delivery & stronger code quality',
       description:
         'Integrated AI into the development workflow by designing and iterating prompts, automating repetitive engineering tasks, improving documentation, and accelerating code review and troubleshooting while maintaining code quality and security standards.',
       role: 'Full Stack Developer',
@@ -35,7 +35,7 @@ export const Intellias: Experience = {
     },
     {
       id: 'ai-contract-data-extraction',
-      name: 'AI Contract Data Extraction & Auto-Fill',
+      name: 'Contract Data Extraction & Auto-Fill (AI) - Faster processing & higher accuracy',
       description:
         'Implemented AI-assisted document understanding to recognize and extract key fields from contracts (e.g., parties, dates, amounts, clauses) and auto-fill structured forms, including validation and human-in-the-loop review workflows to improve accuracy and speed of contract processing.',
       role: 'Full Stack Developer',
@@ -43,7 +43,7 @@ export const Intellias: Experience = {
     },
     {
       id: 'devexpress-grid-optimization',
-      name: 'DevExpress Data Grid Optimization',
+      name: 'DevExpress Data Grid Optimization - Faster UI & more efficient API queries',
       description:
         'Developed UI features with DevExpress(DevExtreme) components and improved performance end-to-end (UI + API) for large grids/tables and datasets. Optimized API queries and data sources to enable fast, reliable server-side sorting, pagination, and filtering, reduced payload size, and improved rendering and interaction responsiveness for end users.',
       role: 'Full Stack Developer',
@@ -51,21 +51,21 @@ export const Intellias: Experience = {
     },
     {
       id: 'support-old-apps',
-      name: 'Support for Legacy Win32 Applications',
+      name: 'Legacy Win32 Support & Migration Planning - Stability today & modernization readiness',
       description:
         'Maintained and enhanced legacy Win32 applications while planning and executing their migration to modern web-based solutions using .NET Core, Angular, and React. Ensured seamless integration with existing systems and improved user experience.',
       role: 'Full Stack Developer',
     },
     {
       id: 'contract-editor',
-      name: 'Contract Editor',
+      name: 'Web Contract Editor - Streamlined authoring & review workflow',
       description:
         'Developed a web-based contract editor for a leading multi-brand provider of IT solutions for business, government, education, and healthcare sectors across the United States, the United Kingdom, and Canada.',
       role: 'Full Stack Developer',
     },
     {
       id: 'quick-reg',
-      name: 'Quick Registration System',
+      name: 'Quick Registration System Migration - Modern UX & improved throughput',
       description:
         'Migrated a legacy Win32 quick registration system to a modern web application using .NET Core and Angular, enhancing user experience and system performance.',
       role: 'Full Stack Developer',
@@ -73,7 +73,7 @@ export const Intellias: Experience = {
     },
     {
       id: 'bid-admin',
-      name: 'Bid Administration System',
+      name: 'Bid Administration System - Simplified administration & compliance support',
       description:
         'Developed a web-based bid administration system for a leading multi-brand provider of IT solutions for business, government, education, and healthcare sectors across the United States, the United Kingdom, and Canada.',
       role: 'Full Stack Developer',

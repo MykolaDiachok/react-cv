@@ -29,14 +29,14 @@ export const DevPro: Experience = {
   projects: [
     {
       id: 'support-visual-basic',
-      name: 'Legacy Enterprise System Support (VB / .NET)',
+      name: 'Enterprise System Support (VB / .NET) - Stable operations for high-availability restaurant chains',
       description: `Long-running, mission-critical enterprise system used by restaurant chains across the US and Canada. The platform consisted of multiple tightly coupled subsystems covering operations, billing, reporting, integrations, and back-office workflows, with high availability and performance requirements.`,
       role: 'Full Stack Developer',
       skills: ['.net', 'vb', 'tfs', 'sql'],
     },
     {
       id: 'migration-to-modern-platform',
-      name: 'Legacy-to-Modern Platform Transformation (API / Angular)',
+      name: 'Legacy-to-Modern Transformation (API / Angular) - Safer modernization with continuous customer support',
       description: `Strategic transformation program to migrate a monolithic legacy platform to a modern, service-oriented architecture with a web-based frontend, while continuing to support existing customers and live operations.`,
       role: 'Full Stack Developer',
       skills: ['.net', 'c#', 'core', 'api', 'angular', 'azure-devops', 'ci/cd'],

@@ -34,7 +34,7 @@ export const KtUkraine: Experience = {
   projects: [
     {
       id: '1c-erp-rollout',
-      name: '1C:Enterprise 8.3 ERP Rollout (Warehouse, Offices & Retail Stores)',
+      name: '1C:Enterprise 8.3 ERP Rollout - Scalable warehouse + retail automation enabling rapid growth',
       description: `Led the rollout of 1C:Enterprise 8.3 as a company-wide ERP backbone, automating warehouse operations and standardizing core processes across all offices. I also implemented a retail accounting system based on 1C for the store network to ensure consistent inventory, pricing, and sales reporting.
 
 This initiative provided a major operational boost: it reduced manual work, improved data consistency, and enabled reliable, scalable expansion of the retail network. As a result, the company accelerated growth and strengthened its position to become a key player in the Ukrainian market.`,
@@ -43,35 +43,35 @@ This initiative provided a major operational boost: it reduced manual work, impr
     },
     {
       id: 'it-transformation',
-      name: 'IT Department Transformation & Operating Model',
+      name: 'IT Department Transformation - Higher throughput, clearer ownership, and more reliable operations',
       description: `Transformed the internal IT function to support rapid company growth. I restructured teams (service desk, infrastructure, business analysis, 1C, mobile, and web), introduced clearer ownership and SLAs, and improved cross-team delivery by aligning priorities with business stakeholders. This increased throughput, reduced operational bottlenecks, and improved reliability of day-to-day IT services.`,
       role: 'CIO',
       skills: ['leadership', 'it-operations', 'process'],
     },
     {
       id: 'active-directory-rollout',
-      name: 'Active Directory Rollout & Identity Management',
+      name: 'Active Directory Rollout - Centralized identity control and stronger security at scale',
       description: `Implemented Active Directory-based enterprise management to centralize identity, access control, and workstation/server policies. I standardized account provisioning, improved security through group-based access and GPOs, and enabled scalable onboarding/offboarding workflows across offices, warehouses, and retail locations.`,
       role: 'CIO',
       skills: ['active-directory', 'security', 'it-operations'],
     },
     {
       id: 'exchange-outlook',
-      name: 'Corporate Email Migration to Microsoft Exchange',
+      name: 'Microsoft Exchange Email Migration - Standardized communication and improved reliability',
       description: `Led the rollout of corporate email on Microsoft Exchange, standardizing mailboxes, distribution lists, and access policies across the company. Coordinated the migration plan, user onboarding, and operational support to ensure a smooth transition and improved collaboration and reliability of corporate communications.`,
       role: 'CIO',
       skills: ['exchange', 'outlook', 'it-operations', 'security'],
     },
     {
       id: 'cloud-migration',
-      name: 'Infrastructure Migration to Cloud (Private Cloud & Google)',
+      name: 'Cloud Migration (Private + Google) - Better scalability, resilience, and cost-efficient operations',
       description: `Planned and executed the migration of key services and data processing/storage workloads to cloud environments (private cloud and Google). I improved scalability and availability, established backup and disaster recovery practices, and optimized operating costs by consolidating infrastructure components and automating provisioning where possible.`,
       role: 'CIO',
       skills: ['cloud', 'google-cloud', 'infrastructure', 'security'],
     },
     {
       id: 'vmware-virtualization',
-      name: 'VMware Virtualization Platform',
+      name: 'VMware Virtualization Platform - Faster provisioning and more resilient 24/7 infrastructure',
       description: `Designed and implemented a VMware-based virtualization platform to standardize server workloads, improve resilience, and speed up provisioning. I introduced virtualization best practices, consolidated physical servers, and improved monitoring and capacity planning to support stable 24/7 operations.`,
       role: 'CIO',
       skills: ['vmware', 'virtualization', 'infrastructure', 'monitoring'],

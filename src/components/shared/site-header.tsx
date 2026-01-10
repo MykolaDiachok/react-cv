@@ -18,6 +18,16 @@ export const SiteHeader = () => {
         <nav className="flex flex-wrap items-center justify-between w-full">
           <div className="">Mykola Diachok</div>
           <div className="flex flex-col rounded-lg p-4 text-lg lg:flex-row lg:space-x-8 lg:border-none lg:bg-transparent">
+            <div className="ml-auto">
+              <a
+                href={withBase('/mykola diachok.pdf')}
+                className="btn-link"
+                download
+                aria-label="Download resume PDF"
+              >
+                PDF
+              </a>
+            </div>
             <a href={withBase('/')} className="hover:text-teal-300 text-sm sm:text-base">
               Resume
             </a>

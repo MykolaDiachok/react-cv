@@ -122,7 +122,7 @@ export const ResumeExperience = () => {
                         title={exp.companyDescription}
                       >
                         {exp.companyName} {exp.companyNameLocal ? `(${exp.companyNameLocal})` : ''}{' '}
-                        {exp.location ? `— ${exp.location}` : ''}
+                        {exp.location ? `- ${exp.location}` : ''}
                       </p>
                       {exp.link && (
                         <p className="mt-1 text-xs sm:text-sm">
@@ -189,7 +189,7 @@ export const ResumeExperience = () => {
                                 next.set(Number(key), new Set(value));
                               }
 
-                              const currentSet = new Set(next.get(index) ?? []);
+                              const currentSet = new Set(next.get(index) ?? new Set());
                               if (currentSet.has(skill)) {
                                 currentSet.delete(skill);
                               } else {

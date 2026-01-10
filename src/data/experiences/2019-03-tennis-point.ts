@@ -44,13 +44,13 @@ export const TennisPoint: Experience = {
   projects: [
     {
       id: 'devops-migration',
-      name: 'Perforce → Azure DevOps Migration & Delivery Process Optimization',
+      name: 'Perforce → Azure DevOps Migration - Faster releases, stronger traceability, and smoother QA collaboration',
       description: `Led the migration of the engineering toolchain from Perforce to Azure DevOps to improve delivery speed, traceability, and collaboration between development and QA. I designed the target workflow (Git repos, branching strategy, PR policies, and release process), rebuilt CI/CD pipelines, and introduced standardized quality gates (build validation, automated tests, and code review checks). As a result, the team reduced manual release activities, improved change visibility across environments, and accelerated feedback loops for QA through repeatable deployments and consistent build artifacts.`,
       role: '.Net Team Lead',
     },
     {
       id: 'sap-s4hana-integration',
-      name: 'SAP S/4HANA ERP Integration',
+      name: 'SAP S/4HANA ERP Integration - Reduced manual operations and improved cross-system transparency',
       description: `Worked closely with the ERP team to implement and integrate SAP S/4HANA (SAP HANA-based ERP) into the company’s ecosystem. I extended and improved custom modules on the application side and delivered integration components to synchronize critical business data and processes between ERP and internal services.
 
 Key contributions included defining integration contracts with stakeholders (data mapping and validation rules), implementing reliable data exchange flows (including error handling and retries), and supporting end-to-end delivery together with QA (integration testing, regression testing, and production cutover support). This improved system interoperability, reduced manual operations, and increased transparency of business transactions across teams.`,
@@ -59,28 +59,28 @@ Key contributions included defining integration contracts with stakeholders (dat
     },
     {
       id: 'warehouse-automation',
-      name: 'Warehouse Automation (Robots & Conveyor Control)',
+      name: 'Warehouse Automation Improvements - Higher throughput and more reliable robot/conveyor operations',
       description: `Enhanced and extended an automated warehouse system used to coordinate picking/packing flows. I improved core modules responsible for warehouse operations, stability, and throughput, and helped implement monitoring and control for warehouse robots and conveyor lines to ensure reliable execution of workflows and fast incident response.`,
       role: '.Net Team Lead',
       skills: ['.net', 'c#', 'core', 'sql'],
     },
     {
       id: 'kyiv-team-build',
-      name: 'Kyiv Team Build-Up (Developers & QA)',
+      name: 'Kyiv Team Build-Up (Developers & QA) - Predictable delivery capacity and better cross-site communication',
       description: `Built the Kyiv delivery team to support the German headquarters. I defined the team structure and roles, participated in recruitment and interviewing for both developers and QA engineers, and established onboarding and ways of working (engineering standards, code review culture, and QA collaboration). This enabled predictable delivery capacity locally and improved communication and delivery flow between Kyiv and the main office.`,
       role: '.Net Team Lead',
       skills: ['leadership', 'hiring', 'mentoring', 'process'],
     },
     {
       id: 'accounting-data-exchange',
-      name: 'Accounting Subsystems Data Exchange & Website Integrations',
+      name: 'Accounting ↔ E-commerce Data Exchange - Reliable integrations with minimal downtime during changes',
       description: `Implemented and supported data exchange between accounting subsystems and multiple e-commerce websites. I designed and maintained integration flows (data mapping, validation, and reconciliation) and coordinated changes with the teams responsible for each site to ensure consistent contracts, reliable releases, and minimal downtime during updates.`,
       role: '.Net Team Lead',
       skills: ['integration', 'api', 'sql', '.net'],
     },
     {
       id: 'ecommerce-crawler',
-      name: 'E-commerce Crawler & Data Quality Reporting',
+      name: 'E-commerce Crawler & Reporting - Actionable visibility into stock, pricing, and content quality',
       description: `Developed a crawler to parse e-commerce websites and generate actionable data-quality reports. The solution collected and validated product availability, price accuracy, and content completeness (titles, descriptions, images, attributes), then produced consolidated reports to highlight discrepancies and missing information for business and content teams.`,
       role: '.Net Team Lead',
       skills: ['net', 'c#', 'core', 'sql', 'integration'],
