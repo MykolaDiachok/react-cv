@@ -66,10 +66,10 @@ in distributed environments.
 
 ### Languages
 
-- **English** — professional working proficiency (daily technical communication)
-- **Ukrainian** — native
-- **Russian** — native
-- **Croatian** — basic conversational
+- **English** - professional working proficiency (daily technical communication)
+- **Ukrainian** - native
+- **Russian** - native
+- **Croatian** - basic conversational
 
 `,
   experiences: [
@@ -114,16 +114,6 @@ in distributed environments.
   ],
   educations: [
     {
-      id: 'College',
-      institutionName: 'Kirovohrad Cybernetics and Technical College',
-      degree: 'Associate Degree in Computer Programming',
-      startDate: new Date('1996-09-01'),
-      endDate: new Date('1999-06-30'),
-      location: 'Kropyvnytskyi, Ukraine',
-      fieldOfStudy: 'Computer Science',
-      description: 'Core programming, databases, and software fundamentals.',
-    },
-    {
       id: 'KISM',
       institutionName: 'Kropyvnytskyi National Technical University',
       degree: 'Master of Science in Computer Science',
@@ -135,6 +125,17 @@ in distributed environments.
         'Specialist in Computer Science, specializing in software development and systems engineering.',
       link: 'https://kntu.kr.ua/',
     },
+    {
+      id: 'College',
+      institutionName: 'Kirovohrad Cybernetics and Technical College',
+      degree: 'Associate Degree in Computer Programming',
+      startDate: new Date('1996-09-01'),
+      endDate: new Date('1999-06-30'),
+      location: 'Kropyvnytskyi, Ukraine',
+      fieldOfStudy: 'Computer Science',
+      description: 'Core programming, databases, and software fundamentals.',
+    },
+
     {
       id: 'Krok',
       institutionName: 'Business School “KROK”',

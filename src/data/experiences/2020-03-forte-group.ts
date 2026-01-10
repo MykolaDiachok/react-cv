@@ -26,7 +26,7 @@ export const ForteGroup: Experience = {
   projects: [
     {
       id: 'dfin-reporting-platform',
-      name: 'DFIN Disclosure Reporting Platform Support & Enhancements',
+      name: 'DFIN Disclosure Reporting Platform - More reliable, scalable, and audit-ready reporting delivery',
       description: `Supported and evolved a collaboration platform used by Donnelley Financial Solutions (DFIN) customers to produce disclosure reports. I implemented new API endpoints, improved reliability and performance in a high-load enterprise environment, and contributed to refactoring legacy areas to reduce operational risk.
 
 I also helped strengthen the delivery process by migrating CI/CD from TFS to Azure DevOps, introducing build validation and automated testing practices to improve release confidence and reduce manual effort.`,
@@ -35,7 +35,7 @@ I also helped strengthen the delivery process by migrating CI/CD from TFS to Azu
     },
     {
       id: 'sharepoint-high-load',
-      name: 'High-Load SharePoint Workflows for DFIN Reporting',
+      name: 'High-Load SharePoint Reporting Workflows - Improved stability under concurrency and faster issue resolution',
       description: `Worked with SharePoint at enterprise scale to support DFIN-related reporting workflows. I investigated performance bottlenecks, improved stability under high concurrency, and helped troubleshoot issues affecting report generation and collaboration scenarios.
 
 In close collaboration with the team, I contributed to hardening security and ensuring predictable behavior of reporting-related features in production environments.`,

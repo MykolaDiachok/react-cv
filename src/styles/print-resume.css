@@ -323,9 +323,83 @@
   margin-top: 3px;
 }
 
+.resume-print__education-meta {
+  margin: 1px 0 0;
+  font-size: 11px;
+  line-height: 1.2;
+  color: #0f766e;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.resume-print__education-meta a {
+  color: inherit;
+}
+
+.resume-print__education-institution {
+  color: #0f766e;
+  font-weight: 600;
+}
+
+.resume-print__separator {
+  color: #64748b;
+}
+
+.resume-print__education-location {
+  margin: 2px 0 0;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #475569;
+  font-weight: 500;
+}
+
 @media print {
   .resume-print__education-item {
     break-inside: avoid;
     page-break-inside: avoid;
   }
+}
+
+.resume-print__project-list {
+  margin: 6px 0 0;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+
+.resume-print__project-item {
+  border-left: 2px solid #e2e8f0;
+  padding-left: 10px;
+}
+
+.resume-print__project-name {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.resume-print__project-description {
+  margin-top: 2px;
+  font-size: 11px;
+  line-height: 1.3;
+  color: #0f172a;
+}
+
+.resume-print__project-description p {
+  margin: 2px 0 0;
+}
+
+.resume-print__project-description ul,
+.resume-print__project-description ol {
+  margin: 3px 0 0;
+  padding-left: 18px;
+}
+
+.resume-print__project-description li {
+  margin: 1px 0;
 }
