@@ -16,7 +16,7 @@ export const ResumeEducation = () => {
             <li className="" key={index}>
               <h3 className="not-first:mt-5">{edu.degree}</h3>
               <p>
-                {edu.institutionName} — {edu.location}
+                {edu.institutionName} - {edu.location}
               </p>
               <p>
                 {edu.startDate.toLocaleDateString()} –{' '}

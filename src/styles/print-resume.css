@@ -1,0 +1,331 @@
+/* Print/PDF styling for the resume view.
+   This is intentionally separate from the interactive site styling.
+*/
+
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+/* Base layout for the print page */
+.resume-print {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.resume-print__container {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans",
+    sans-serif;
+}
+
+/* We keep the header layout from ResumeHeader itself; the page layout is single-column. */
+.resume-print__header {
+  margin-bottom: 10px;
+}
+
+.resume-print__description {
+  margin-bottom: 10px;
+}
+
+.resume-print__experience {
+  margin-top: 6px;
+}
+
+/* Put education at the end (optionally on a new page). */
+.resume-print__education {
+  margin-top: 14px;
+}
+
+@media print {
+  .resume-print__education {
+    break-before: page;
+    page-break-before: always;
+  }
+}
+
+/* Make our existing blocks look clean on white */
+.resume-print .bg-slate-950,
+.resume-print .bg-slate-900\/50,
+.resume-print .dark\:bg-gray-900\/40,
+.resume-print .dark\:bg-gray-900\/60 {
+  background: transparent !important;
+}
+
+.resume-print .text-slate-100,
+.resume-print .text-slate-50,
+.resume-print .text-slate-300,
+.resume-print .dark\:text-gray-100,
+.resume-print .dark\:text-gray-200,
+.resume-print .dark\:text-gray-300,
+.resume-print .dark\:text-gray-400 {
+  color: #0f172a !important;
+}
+
+.resume-print a {
+  color: #0f766e;
+  text-decoration: none;
+}
+
+.resume-print a:hover {
+  text-decoration: underline;
+}
+
+/* Hide skills column in experiences for PDF */
+.resume-print--pdf [aria-pressed],
+.resume-print--pdf .btn-link,
+.resume-print--pdf .no-print {
+  display: none !important;
+}
+
+/* Specifically hide the Skills block container that sits to the right in ResumeExperience */
+.resume-print--pdf .lg\:w-64,
+.resume-print--pdf .xl\:w-72 {
+  display: none !important;
+}
+
+/* Avoid clipping expanded sections in PDF */
+.resume-print--pdf .overflow-hidden {
+  overflow: visible !important;
+}
+
+/* Ensure key features and projects are visible even if the interactive view would collapse them */
+.resume-print--pdf .max-h-0 {
+  max-height: none !important;
+}
+
+/* Avoid interactive UI in PDF */
+@media print {
+  /* Links should be readable in PDF */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Don't waste space with hover/focus visuals */
+  * {
+    box-shadow: none !important;
+  }
+}
+
+/* Print-friendly typography helpers used by ResumeExperiencePrint */
+.resume-print__heading {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #0ea5a4;
+}
+
+.resume-print__subheading {
+  margin: 10px 0 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #334155;
+}
+
+.resume-print__experience-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.resume-print__experience-item {
+  border: 1px solid #e2e8f0;
+  border-left: 3px solid #0ea5a4;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.resume-print__experience-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.resume-print__experience-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.resume-print__meta {
+  font-size: 10px;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.resume-print__company {
+  margin: 2px 0 0;
+  font-size: 11px;
+  color: #0f766e;
+  font-weight: 600;
+}
+
+.resume-print__prose {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #0f172a;
+}
+
+.resume-print__list {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  list-style: disc;
+}
+
+.resume-print__list-item {
+  font-size: 11px;
+  margin: 2px 0;
+}
+
+@media print {
+  /* Try not to split one experience block across pages */
+  .resume-print__experience-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+/* Shared section wrapper used by print-only blocks */
+.resume-print__section {
+  margin-bottom: 10px;
+}
+
+/* Print-only header layout */
+.resume-print__header-grid {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+@media print {
+  .resume-print__header-grid {
+    grid-template-columns: 96px 1fr;
+  }
+
+  .resume-print__avatar {
+    width: 96px !important;
+    height: 96px !important;
+  }
+}
+
+.resume-print__header-photo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.resume-print__avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 9999px;
+  object-fit: cover;
+  border: 2px solid #0ea5a4;
+}
+
+@media print {
+  .resume-print__avatar {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+
+.resume-print__header-info {
+  min-width: 0;
+}
+
+.resume-print__name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.resume-print__title {
+  margin: 3px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.resume-print__contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0;
+  display: grid;
+  gap: 2px;
+  font-size: 11px;
+  color: #0f172a;
+}
+
+/* Print-only education */
+.resume-print__education-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.resume-print__education-item {
+  border: 1px solid #e2e8f0;
+  border-left: 3px solid #0ea5a4;
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.resume-print__education-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.resume-print__education-degree {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.resume-print__education-school {
+  margin: 1px 0 0;
+  font-size: 11px;
+  color: #0f766e;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Make any paragraph content inside education compact */
+.resume-print__education-item p {
+  margin: 3px 0 0;
+  line-height: 1.25;
+}
+
+.resume-print__education-item p:first-of-type {
+  margin-top: 2px;
+}
+
+/* Tighter spacing for paragraphs inside Education items */
+.resume-print__education-item .resume-print__prose {
+  margin-top: 4px;
+  line-height: 1.3;
+}
+
+.resume-print__education-item .resume-print__prose + .resume-print__prose {
+  margin-top: 3px;
+}
+
+@media print {
+  .resume-print__education-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
