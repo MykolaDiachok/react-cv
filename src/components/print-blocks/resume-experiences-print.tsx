@@ -32,7 +32,7 @@ const calculateDuration = (startDateString: Date, endDateString?: Date | null): 
 };
 
 const ExperienceProjects: React.FC<{ experience: Experience }> = ({ experience }) => {
-  const projects = (experience.projects ?? []).slice(0, 2);
+  const projects = (experience.projects ?? []).slice(0, 4);
   if (projects.length === 0) return;
 
   return (
@@ -42,9 +42,6 @@ const ExperienceProjects: React.FC<{ experience: Experience }> = ({ experience }
         {projects.map((project) => (
           <li key={project.id} className="resume-print__project-item">
             <p className="resume-print__project-name">{project.name}</p>
-            <div className="resume-print__project-description">
-              <MarkdownRenderer content={project.description} />
-            </div>
           </li>
         ))}
       </ul>

@@ -17,6 +17,9 @@ export const cvEn: Cv = {
   name: 'Mykola Diachok',
   title: 'Senior Full Stack Developer / Solution Architect',
   email: 'm.diachok@icloud.com',
+  siteUrl: 'https://mykoladiachok.github.io/react-cv/',
+  linkedInUrl: 'https://www.linkedin.com/in/mykola-d-5999b913/',
+  githubUrl: 'https://mykoladiachok.github.io/',
   phone: '+385916077610',
   description: `**Senior Full Stack Engineer / Solution Architect** with 20+ years of experience
 designing, modernizing, and scaling enterprise-grade software systems across

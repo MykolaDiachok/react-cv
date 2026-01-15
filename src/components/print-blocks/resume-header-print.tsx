@@ -7,9 +7,22 @@ const formatPhone = (phone?: string | null) => {
   return phoneNumber?.formatInternational() ?? phone ?? '';
 };
 
+const asHttpsUrl = (url?: string | null): string | undefined => {
+  const value = url?.trim();
+  if (!value) return undefined;
+
+  if (value.startsWith('http://') || value.startsWith('https://')) return value;
+  return `https://${value}`;
+};
+
+const displayUrl = (url: string) => url.replace(/^https?:\/\//, '').replace(/\/$/, '');
+
 export const ResumeHeaderPrint: React.FC = () => {
   const { resume } = useResume();
-  const { name, title, location, email, phone } = resume;
+  const { name, title, location, email, phone, siteUrl, linkedInUrl } = resume;
+
+  const normalizedSiteUrl = asHttpsUrl(siteUrl);
+  const normalizedLinkedInUrl = asHttpsUrl(linkedInUrl);
 
   return (
     <div className="resume-print__section">
@@ -19,9 +32,14 @@ export const ResumeHeaderPrint: React.FC = () => {
           {title && <p className="resume-print__title">{title}</p>}
 
           <ul className="resume-print__contact-list" aria-label="Contact information">
-            {location && <li>{location}</li>}
+            {location && (
+              <li>
+                <span className="resume-print__contact-label">Location:</span> {location}
+              </li>
+            )}
             {email && (
               <li>
+                <span className="resume-print__contact-label">Email:</span>{' '}
                 <a href={`mailto:${email}`} rel="noreferrer noopener">
                   {email}
                 </a>
@@ -29,8 +47,25 @@ export const ResumeHeaderPrint: React.FC = () => {
             )}
             {phone && (
               <li>
+                <span className="resume-print__contact-label">Phone:</span>{' '}
                 <a href={`tel:${phone}`} rel="noreferrer noopener">
                   {formatPhone(phone)}
+                </a>
+              </li>
+            )}
+            {normalizedSiteUrl && (
+              <li>
+                <span className="resume-print__contact-label">Site:</span>{' '}
+                <a href={normalizedSiteUrl} target="_blank" rel="noreferrer noopener">
+                  {displayUrl(normalizedSiteUrl)}
+                </a>
+              </li>
+            )}
+            {normalizedLinkedInUrl && (
+              <li>
+                <span className="resume-print__contact-label">LinkedIn:</span>{' '}
+                <a href={normalizedLinkedInUrl} target="_blank" rel="noreferrer noopener">
+                  {displayUrl(normalizedLinkedInUrl)}
                 </a>
               </li>
             )}

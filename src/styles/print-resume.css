@@ -265,6 +265,11 @@
   color: #0f172a;
 }
 
+.resume-print__contact-label {
+  font-weight: 700;
+  color: #334155;
+}
+
 /* Print-only education */
 .resume-print__education-list {
   list-style: none;
