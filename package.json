@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro check && astro build",
+    "build:with-pdf": "astro check && astro build && node scripts/generate-resume-pdf.mjs",
     "lint": "eslint .",
     "preview": "astro preview",
     "generate:sitemap": "ts-node --project tsconfig.scripts.json scripts/generate-sitemap.ts",
     "deploy": "astro build && node -e \"require('fs').writeFileSync('dist/.nojekyll','')\" && gh-pages -d dist --dotfiles",
+    "deploy:with-pdf": "astro build && node scripts/generate-resume-pdf.mjs && node -e \"require('fs').writeFileSync('dist/.nojekyll','')\" && gh-pages -d dist --dotfiles",
     "test": "vitest",
     "test:watch": "vitest --watch",
     "test:coverage": "vitest --coverage"
@@ -55,6 +57,7 @@
     "gh-pages": "^6.3.0",
     "globals": "^16.5.0",
     "jsdom": "^27.4.0",
+    "playwright": "^1.57.0",
     "prettier": "^3.7.4",
     "sitemap": "^9.0.0",
     "tailwindcss": "^3.4.19",

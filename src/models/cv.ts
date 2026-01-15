@@ -11,6 +11,9 @@ export interface Cv {
   dateOfBirth?: Date;
   email: string;
   phone?: string;
+  siteUrl?: string;
+  linkedInUrl?: string;
+  githubUrl?: string;
   location?: string;
   summary?: string;
   experiences: Experience[];

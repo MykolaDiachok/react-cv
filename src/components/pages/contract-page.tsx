@@ -23,14 +23,14 @@ const ContractPageBody: React.FC = () => {
   })();
 
   const aboutMeMarkdown = `### About me
-I’m a reliable, accountable engineer who cares about outcomes—not just shipping code. I enjoy listening first, understanding the business context, and then turning that understanding into practical, maintainable solutions.
+I’m a reliable, accountable engineer who cares about outcomes-not just shipping code. I enjoy listening first, understanding the business context, and then turning that understanding into practical, maintainable solutions.
 
 I’m at my best when I can help a team improve the way they deliver value: simplifying workflows, removing bottlenecks, automating repetitive steps, and keeping quality high.
 
 ### How I work
 - I listen carefully, ask clarifying questions, and help stakeholders turn ideas into actionable requirements.
 - I translate “we need it to work” into a clear delivery plan: MVP → iterations → stabilization.
-- I communicate transparently: progress, risks, trade-offs, and expectations—no surprises.
+- I communicate transparently: progress, risks, trade-offs, and expectations-no surprises.
 
 ### What I like improving
 - **Business processes:** simplification, automation, less manual work.

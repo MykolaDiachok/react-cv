@@ -31,7 +31,7 @@ export const RadioLine: Experience = {
   projects: [
     {
       id: '1c-erp-subsystem-integration',
-      name: '1C ERP Subsystem Integration & End-to-End Business Automation',
+      name: '1C ERP Integration & End-to-End Automation - Streamlined workflows and improved data consistency',
       description: `Integrated and customized a 1C ERP subsystem across the enterprise as the sole developer, delivering end-to-end automation for both wholesale and retail operations.
 
 I covered the full lifecycle: requirements clarification with business users, configuration and customization, data exchange and reporting, performance tuning, and production support. The solution optimized day-to-day workflows for managers, warehouse teams, and back-office functions, reduced manual operations, and improved data consistency across departments.`,
@@ -40,28 +40,28 @@ I covered the full lifecycle: requirements clarification with business users, co
     },
     {
       id: 'wholesale-ios-app',
-      name: 'Wholesale Sales iOS App (Early Swift)',
+      name: 'Wholesale Sales iOS App (Early Swift) - Enabled mobile order workflows and faster field sales',
       description: `Developed a wholesale sales mobile application for iOS using early Swift versions. The app supported day-to-day work for sales managers: product catalog access, price/availability checks, customer and order workflows, and synchronized data with the back-office systems to keep business-critical information consistent across channels.`,
       role: 'Mobile developer',
       skills: ['ios', 'swift', 'object-c', 'mobile', 'api', 'integration'],
     },
     {
       id: 'wholesale-android-app',
-      name: 'Wholesale Sales Android App',
+      name: 'Wholesale Sales Android App - Faster product/order workflows with reliable back-office sync',
       description: `Developed a wholesale sales application for Android to support field and office sales workflows. The solution provided fast access to product data, customer information, and order creation, and integrated with internal services to ensure reliable synchronization and reporting.`,
       role: 'Mobile developer',
       skills: ['android', 'mobile', 'api', 'integration'],
     },
     {
       id: 'retail-android-app',
-      name: 'Retail Sales Android App (Kotlin)',
+      name: 'Retail Sales Android App (Kotlin) - Streamlined in-store sales capture and inventory consistency',
       description: `Developed an Android retail sales application in Kotlin to support in-store operations. The app streamlined day-to-day workflows such as product lookup, pricing and availability checks, and sales/order capture, and integrated with internal back-office services to keep inventory and sales data consistent across stores.`,
       role: 'Mobile developer',
       skills: ['android', 'kotlin', 'mobile', 'api', 'integration', 'retail', 'java'],
     },
     {
       id: 'marketing-websites',
-      name: 'Marketing Websites for Product Groups (SEO & Online Promotion)',
+      name: 'Marketing Websites for Product Groups - Improved online promotion and SEO visibility',
       description: `Developed and maintained a set of marketing websites for the company and separate product groups to support online promotion. The sites were used to publish product information and marketing content, run advertising campaigns, and improve organic search visibility through structured content, landing pages, and SEO-friendly site architecture.`,
       role: 'front-end developer',
       skills: [
@@ -78,14 +78,14 @@ I covered the full lifecycle: requirements clarification with business users, co
     },
     {
       id: 'event-spa-websites',
-      name: 'Event SPA Websites (Attendee Registration & Campaign Landing Pages)',
+      name: 'Event SPA Websites - Higher attendee registrations with integrated reporting',
       description: `Developed a series of SPA websites for marketing events and product campaigns. The sites included landing pages and attendee registration flows (forms, validation, and basic analytics), and integrated with internal services to collect registrations and provide operational reporting for event coordinators.`,
       role: 'front-end developer',
       skills: ['web', 'spa', 'javascript', 'angular.js', 'firebase', 'api', 'integration'],
     },
     {
       id: 'integration-api-layer',
-      name: 'Integration API for Websites & Mobile Apps',
+      name: 'Integration API for Web & Mobile - Consistent multi-channel data synchronization',
       description: `Developed an internal API layer to enable reliable integration between back-office systems, company websites, and mobile applications. I designed stable integration contracts, implemented core endpoints for product/catalog, pricing, and order workflows, and ensured consistent data synchronization across channels for both wholesale and retail use cases.`,
       role: 'Back-end developer',
       skills: ['api', 'integration', 'sql', '.net', 'web', 'mobile'],

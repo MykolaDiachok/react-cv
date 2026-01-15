@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { ResumePrintPage } from '../components/pages/resume-print-page.tsx';
+
+const title = 'Resume (PDF) - Mykola Diachok';
+const description = 'Print-friendly resume view (PDF export).';
+---
+
+<BaseLayout title={title} description={description}>
+  <!-- Print/PDF view. Prefer SSR HTML for styling and browser print-to-PDF. -->
+  <ResumePrintPage client:load />
+</BaseLayout>

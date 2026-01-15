@@ -1,4 +1,4 @@
-# Mykola Diachok — CV / Resume
+# Mykola Diachok - CV / Resume
 
 This repository contains my personal **CV / resume website**.
 
@@ -56,12 +56,12 @@ Notes:
 
 ## Project structure (high level)
 
-- `src/pages/index.astro` — the entry page (SEO-friendly wrapper + React hydration)
-- `src/layouts/BaseLayout.astro` — global `<head>` meta tags, Open Graph, JSON-LD, Google Analytics
-- `src/app.tsx` — main React app
-- `src/components/` — UI blocks (header, experience, projects, etc.)
-- `src/data/` — CV data (experience/projects/skills)
-- `public/` — static assets (robots.txt, sitemap, images)
+- `src/pages/index.astro` - the entry page (SEO-friendly wrapper + React hydration)
+- `src/layouts/BaseLayout.astro` - global `<head>` meta tags, Open Graph, JSON-LD, Google Analytics
+- `src/app.tsx` - main React app
+- `src/components/` - UI blocks (header, experience, projects, etc.)
+- `src/data/` - CV data (experience/projects/skills)
+- `public/` - static assets (robots.txt, sitemap, images)
 
 ## License
 

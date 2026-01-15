@@ -15,32 +15,66 @@ import { poligraphIzdat } from './experiences/1995-11-poligraph-izdat.ts';
 export const cvEn: Cv = {
   id: 'cv-en',
   name: 'Mykola Diachok',
-  title: 'Software Engineer',
+  title: 'Senior Full Stack Developer / Solution Architect',
   email: 'm.diachok@icloud.com',
+  siteUrl: 'https://mykoladiachok.github.io/react-cv/',
+  linkedInUrl: 'https://www.linkedin.com/in/mykola-d-5999b913/',
+  githubUrl: 'https://mykoladiachok.github.io/',
   phone: '+385916077610',
-  description: `🔧 **Full Stack Engineer** with over **20 years of experience** building scalable enterprise-grade web and mobile applications. Expert in full SDLC — from architecture design to deployment and optimization.
+  description: `**Senior Full Stack Engineer / Solution Architect** with 20+ years of experience
+designing, modernizing, and scaling enterprise-grade software systems across
+retail, finance, manufacturing, and service industries.
 
-### 💡 Technical Strengths
+Focused on building **reliable, high-performance platforms**, leading
+**legacy-to-modern transformations**, and delivering **cloud-ready solutions**
+in distributed environments.
 
-- Deep expertise in **.NET (C#, ASP.NET Core, Web API)**, **Angular**, and **React**
-- Strong experience with **Azure DevOps**, **CI/CD pipelines**, and **cloud platforms** (Azure, AWS, GCP)
-- Proven ability to modernize **legacy Win32 systems** into responsive web applications
-- Hands-on knowledge of **MongoDB**, **SQL Server**, **Cosmos DB**, and **Elasticsearch**
-- Familiar with **Microservices**, **SOA**, and **distributed architecture**
+### Core Expertise
 
-### 🚀 Career Highlights
+- Legacy system modernization (Win32 → Web, Monolith → Modular)
+- Enterprise and high-load system design
+- Distributed and cloud-based architectures
+- API design and system integrations
+- Performance optimization and scalability
+- Technical leadership and mentoring
 
-- Led migration of legacy systems for clients across **US, UK, and Canada**
-- Designed and delivered REST APIs and real-time integrations
-- Mentored junior engineers and contributed to architecture strategy
-- Built a web portal for EDI visibility, manual control, and monitoring
+### Technology Stack
 
-### 🌍 Other Qualities
+**Backend**
+- .NET, C#, ASP.NET Core, Web API
+- SQL Server, MongoDB, Cosmos DB
+- Background services, integrations, ETL
 
-- Authorized to work in the **EU**
-- Strong in **critical thinking**, **problem solving**, and **team leadership**
-- Passionate about clean architecture, **code refactoring**, and performance tuning
-- Fluent in **English**, **Ukrainian**, **Russian**, and **intermediate Croatian**`,
+**Frontend**
+- Angular, React, TypeScript
+- Complex UI state management
+- Enterprise-grade data grids and forms
+
+**Cloud & DevOps**
+- Azure (App Services, Storage, CI/CD)
+- Azure DevOps pipelines
+- Docker, cloud-native deployments
+
+### Career Highlights
+
+- Led multi-year **legacy Win32 to web platform migrations**
+  for enterprise clients in the US, UK, and Canada
+- Designed and delivered **high-load, multi-tenant systems**
+  serving thousands of users
+- Built and optimized **REST APIs** and real-time integrations
+- Improved system performance and stability through
+  database and application-level optimizations
+- Mentored developers and contributed to architectural decisions
+  across multiple teams
+
+### Languages
+
+- **English** - professional working proficiency (daily technical communication)
+- **Ukrainian** - native
+- **Russian** - native
+- **Croatian** - basic conversational
+
+`,
   experiences: [
     Intellias,
     DevelopmentPro,
@@ -83,16 +117,6 @@ export const cvEn: Cv = {
   ],
   educations: [
     {
-      id: 'College',
-      institutionName: 'Kirovohrad Cybernetics and Technical College',
-      degree: 'Associate Degree in Computer Programming',
-      startDate: new Date('1996-09-01'),
-      endDate: new Date('1999-06-30'),
-      location: 'Kropyvnytskyi, Ukraine',
-      fieldOfStudy: 'Computer Science',
-      description: 'Core programming, databases, and software fundamentals.',
-    },
-    {
       id: 'KISM',
       institutionName: 'Kropyvnytskyi National Technical University',
       degree: 'Master of Science in Computer Science',
@@ -104,6 +128,17 @@ export const cvEn: Cv = {
         'Specialist in Computer Science, specializing in software development and systems engineering.',
       link: 'https://kntu.kr.ua/',
     },
+    {
+      id: 'College',
+      institutionName: 'Kirovohrad Cybernetics and Technical College',
+      degree: 'Associate Degree in Computer Programming',
+      startDate: new Date('1996-09-01'),
+      endDate: new Date('1999-06-30'),
+      location: 'Kropyvnytskyi, Ukraine',
+      fieldOfStudy: 'Computer Science',
+      description: 'Core programming, databases, and software fundamentals.',
+    },
+
     {
       id: 'Krok',
       institutionName: 'Business School “KROK”',
@@ -212,7 +247,7 @@ export const cvEn: Cv = {
     },
     {
       id: 'adeept-car-robot',
-      name: 'Adeept Car — Kids-Friendly Robot Car (Pet Project)',
+      name: 'Adeept Car - Kids-Friendly Robot Car (Pet Project)',
       role: 'Creator / Full Stack Hobby Engineer',
       description:
         'Built a small robot-car project based on the Adeept platform to make a reliable, kid-friendly toy that’s easy to control and fun to experiment with. Focused on safe interaction, predictable behavior, and straightforward setup so kids could play without constant adult “debugging”.\n\nRepository: https://github.com/MykolaDiachok/adeept-car',
@@ -235,10 +270,10 @@ export const cvEn: Cv = {
     },
     {
       id: 'megahome-smart-home',
-      name: 'MegaHome — Smart Home Automation (Arduino + Raspberry Pi)',
+      name: 'MegaHome - Smart Home Automation (Arduino + Raspberry Pi)',
       role: 'Creator / Hardware-Software Engineer (Pet Project)',
       description:
-        'Designed and built a working smart-home automation system using Arduino controllers and Raspberry Pi as the orchestration hub. The system provided centralized control over lighting, heating, floor heating, air conditioning, air quality monitoring, and other household automations — all integrated into Apple HomeKit for a seamless iOS experience.\n\nRepository: https://github.com/MykolaDiachok/megahome',
+        'Designed and built a working smart-home automation system using Arduino controllers and Raspberry Pi as the orchestration hub. The system provided centralized control over lighting, heating, floor heating, air conditioning, air quality monitoring, and other household automations - all integrated into Apple HomeKit for a seamless iOS experience.\n\nRepository: https://github.com/MykolaDiachok/megahome',
       skills: [
         'Arduino',
         'Raspberry Pi',
